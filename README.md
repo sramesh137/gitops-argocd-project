@@ -44,7 +44,7 @@ Before you begin, make sure the following tools are installed and configured:
   ```
 ### ✅ KIND Cluster Validation
 
-After creating your KIND cluster, validate it with the following commands and expected output:
+After creating the KIND cluster, validate it with the following commands and expected output:
 
 ```bash
 ➜  kind git:(master) kind get clusters
@@ -112,7 +112,7 @@ Wait until all pods show `STATUS: Running`.
 
 ## ❌ Why NodePort Does Not Work with KIND
 
-You may try this:
+We can try this as well:
 
 ```bash
 kubectl patch svc argocd-server -n argocd \
@@ -194,7 +194,7 @@ This section sets up a GitOps-style deployment using ArgoCD for a sample vote ap
 ### 1. Clone Your Fork
 
 ```bash
-git clone https://github.com/<your-username>/vote-deploy.git
+git clone https://github.com/<yourusername>/vote-deploy.git
 cd vote-deploy
 ```
 
@@ -202,7 +202,7 @@ cd vote-deploy
 
 ### 2. Directory Structure
 
-Your repo should look like:
+Repo should look like:
 
 ```
 vote-deploy/
@@ -254,7 +254,7 @@ staging              Active   47m
    * App Name: `vote-staging`
    * Project: `default`
    * Sync Policy: Manual
-   * Repo URL: your GitHub fork URL
+   * Repo URL: Your GitHub fork URL
    * Path: `staging`
    * Namespace: `staging`
 <img width="499" alt="image" src="https://github.com/user-attachments/assets/0931b969-9432-4757-b543-c8d1f1a5732b" />
